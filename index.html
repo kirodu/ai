@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="学历提升、技能考证一站式服务平台，助您职业发展更上一层楼">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>学历提升 | 技能考证 - 职业发展加速器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">职业提升平台</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#services">服务项目</a></li>
+                <li><a href="#advantages">我们的优势</a></li>
+                <li><a href="#certificates">热门证书</a></li>
+                <li><a href="#contact">立即咨询</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section class="hero">
+        <div class="container">
+            <div class="promo-badge">🔥 专业教育服务平台</div>
+            <h1>提升学历 · 考取证书<br>开启职业新篇章</h1>
+            <p class="hero-subtitle">专业团队助力，轻松获得国家认可学历与职业资格证书</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary" id="heroContactBtn">立即咨询</button>
+                <button class="btn btn-secondary" onclick="scrollToServices()">了解更多</button>
+            </div>
+            <!-- 数据统计 -->
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">服务学员</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">通过率 %</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">合作院校</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">服务年限</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务项目 - 横向滚动 -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">服务项目</h2>
+            <p class="section-subtitle">专业服务，助力职业发展</p>
+            <div class="services-scroll-container">
+                <div class="services-scroll">
+                    <div class="service-card-horizontal">
+                        <div class="service-icon-large">🎓</div>
+                        <h3>成人高考</h3>
+                        <p>国家认可学历<br>学信网可查</p>
+                        <span class="service-tag">热门</span>
+                    </div>
+                    <div class="service-card-horizontal">
+                        <div class="service-icon-large">📚</div>
+                        <h3>自学考试</h3>
+                        <p>含金量高<br>社会认可度高</p>
+                        <span class="service-tag">推荐</span>
+                    </div>
+                    <div class="service-card-horizontal">
+                        <div class="service-icon-large">💻</div>
+                        <h3>网络教育</h3>
+                        <p>时间灵活<br>名校学历</p>
+                        <span class="service-tag">便捷</span>
+                    </div>
+                    <div class="service-card-horizontal">
+                        <div class="service-icon-large">🏫</div>
+                        <h3>开放大学</h3>
+                        <p>免试入学<br>轻松拿证</p>
+                        <span class="service-tag">简单</span>
+                    </div>
+                    <div class="service-card-horizontal">
+                        <div class="service-icon-large">👨‍🏫</div>
+                        <h3>教师资格证</h3>
+                        <p>教育行业<br>必备证书</p>
+                        <span class="service-tag">热门</span>
+                    </div>
+                    <div class="service-card-horizontal">
+                        <div class="service-icon-large">💼</div>
+                        <h3>职业技能</h3>
+                        <p>实战导向<br>快速上手</p>
+                        <span class="service-tag">实用</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 优势展示 - 四宫格突出 -->
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <h2 class="section-title">为什么选择我们</h2>
+            <p class="section-subtitle">专业 · 高效 · 可靠</p>
+            <div class="advantages-grid-four">
+                <div class="advantage-card">
+                    <div class="advantage-icon-box">
+                        <span class="advantage-icon">🏆</span>
+                    </div>
+                    <h3>正规资质</h3>
+                    <p>与多所知名院校合作<br>证书国家认可<br>学信网终身可查</p>
+                    <div class="advantage-badge">权威认证</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon-box">
+                        <span class="advantage-icon">⚡</span>
+                    </div>
+                    <h3>灵活学习</h3>
+                    <p>线上线下结合<br>工作学习两不误<br>自由安排时间</p>
+                    <div class="advantage-badge">随时随地</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon-box">
+                        <span class="advantage-icon">👨‍🎓</span>
+                    </div>
+                    <h3>专业辅导</h3>
+                    <p>资深教师团队<br>一对一答疑<br>通过率高达95%</p>
+                    <div class="advantage-badge">高通过率</div>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon-box">
+                        <span class="advantage-icon">🎯</span>
+                    </div>
+                    <h3>全程服务</h3>
+                    <p>从报名到拿证<br>全程跟踪服务<br>省心省力</p>
+                    <div class="advantage-badge">一站式</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门证书 - 可点击跳转 -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">热门证书推荐</h2>
+            <p class="section-subtitle">选择适合你的职业证书</p>
+            <div class="certificates-grid">
+                <a href="#contact" class="cert-card-link">
+                    <div class="cert-card-new">
+                        <div class="cert-icon">👨‍🏫</div>
+                        <h3>教师资格证</h3>
+                        <p class="cert-desc">教育行业必备，职业发展首选</p>
+                        <div class="cert-info-row">
+                            <span>📅 每年2次</span>
+                            <span>⏱️ 3-6个月</span>
+                        </div>
+                        <div class="cert-stats">
+                            <span>🔥 报名人数：8,520</span>
+                        </div>
+                        <div class="cert-arrow">→</div>
+                    </div>
+                </a>
+                <a href="#contact" class="cert-card-link">
+                    <div class="cert-card-new">
+                        <div class="cert-icon">💰</div>
+                        <h3>会计职称</h3>
+                        <p class="cert-desc">财务领域敲门砖，薪资提升保障</p>
+                        <div class="cert-info-row">
+                            <span>📅 每年1次</span>
+                            <span>⏱️ 4-8个月</span>
+                        </div>
+                        <div class="cert-stats">
+                            <span>🔥 报名人数：6,340</span>
+                        </div>
+                        <div class="cert-arrow">→</div>
+                    </div>
+                </a>
+                <a href="#contact" class="cert-card-link">
+                    <div class="cert-card-new">
+                        <div class="cert-icon">👔</div>
+                        <h3>人力资源管理师</h3>
+                        <p class="cert-desc">HR必备证书，管理岗位通行证</p>
+                        <div class="cert-info-row">
+                            <span>📅 每年2次</span>
+                            <span>⏱️ 3-5个月</span>
+                        </div>
+                        <div class="cert-stats">
+                            <span>🔥 报名人数：5,120</span>
+                        </div>
+                        <div class="cert-arrow">→</div>
+                    </div>
+                </a>
+                <a href="#contact" class="cert-card-link">
+                    <div class="cert-card-new">
+                        <div class="cert-icon">🏗️</div>
+                        <h3>建造师</h3>
+                        <p class="cert-desc">建筑行业金牌证书，高薪职位必备</p>
+                        <div class="cert-info-row">
+                            <span>📅 每年1次</span>
+                            <span>⏱️ 6-12个月</span>
+                        </div>
+                        <div class="cert-stats">
+                            <span>🔥 报名人数：4,890</span>
+                        </div>
+                        <div class="cert-arrow">→</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学习流程 - 横向展示 -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">学习流程</h2>
+            <p class="section-subtitle">五步轻松拿证</p>
+            <div class="timeline-horizontal">
+                <div class="timeline-item-h">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3>咨询报名</h3>
+                        <p>专业顾问一对一<br>制定学习方案</p>
+                    </div>
+                </div>
+                <div class="timeline-arrow">→</div>
+                <div class="timeline-item-h">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3>资料审核</h3>
+                        <p>提交报名材料<br>快速审核通过</p>
+                    </div>
+                </div>
+                <div class="timeline-arrow">→</div>
+                <div class="timeline-item-h">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3>开始学习</h3>
+                        <p>线上线下结合<br>灵活安排时间</p>
+                    </div>
+                </div>
+                <div class="timeline-arrow">→</div>
+                <div class="timeline-item-h">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h3>参加考试</h3>
+                        <p>考前辅导冲刺<br>全程跟踪服务</p>
+                    </div>
+                </div>
+                <div class="timeline-arrow">→</div>
+                <div class="timeline-item-h">
+                    <div class="timeline-number">05</div>
+                    <div class="timeline-content">
+                        <h3>获得证书</h3>
+                        <p>顺利拿证<br>职业发展加速</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功案例 -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">学员心声</h2>
+            <p class="section-subtitle">真实学员，真实评价，看看他们怎么说</p>
+            <div class="testimonials-slider">
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">张</div>
+                            <div class="testimonial-info">
+                                <p class="testimonial-author">张女士</p>
+                                <p class="testimonial-role">市场专员 → 市场经理</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"通过平台提升了学历，顺利拿到了本科文凭，现在工作机会多了很多！公司还给我升职加薪了，月薪从6K涨到12K！"</p>
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-time">2个月前</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">李</div>
+                            <div class="testimonial-info">
+                                <p class="testimonial-author">李先生</p>
+                                <p class="testimonial-role">培训讲师</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"老师很专业，学习资料齐全，一次性通过了教师资格证考试。现在已经成功入职培训机构，感谢平台的帮助！"</p>
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-time">1个月前</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">王</div>
+                            <div class="testimonial-info">
+                                <p class="testimonial-author">王女士</p>
+                                <p class="testimonial-role">会计主管</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"服务很到位，从报名到考试全程指导，省心又高效！拿到中级会计职称后，年薪直接涨了5万，太值了！"</p>
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-time">3周前</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">常见问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>学历证书是国家认可的吗？</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        是的，我们提供的所有学历证书均为国家认可，学信网可查，与全日制学历具有同等法律效力，可用于求职、考研、考公、职称评定等。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>需要多长时间可以拿到证书？</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        根据不同的学历提升方式和证书类型，时间有所不同。一般来说，专科/本科学历需要2.5-3年，职业资格证书需要3-12个月不等。具体时间可咨询我们的专业顾问。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>学习方式灵活吗？会影响工作吗？</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        我们提供线上线下相结合的学习方式，时间灵活自由，完全不会影响正常工作。您可以利用业余时间学习，随时随地通过手机、电脑上课。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>通过率高吗？如果没通过怎么办？</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        我们的通过率高达95%以上。我们提供专业的考前辅导和全程跟踪服务。如果第一次没通过，我们承诺免费重学，直到您顺利拿到证书。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>费用包含哪些内容？</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        费用包含报名费、学习资料费、辅导费、考试费等全部费用，中途不会再收取任何额外费用。我们承诺价格透明，无隐形消费。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系咨询 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">立即咨询</h2>
+            <p class="contact-subtitle">填写信息，专业顾问将在24小时内与您联系</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="tel" placeholder="联系电话" required>
+                </div>
+                <div class="form-row">
+                    <select required>
+                        <option value="">选择意向项目</option>
+                        <option value="学历提升">学历提升</option>
+                        <option value="教师资格证">教师资格证</option>
+                        <option value="会计职称">会计职称</option>
+                        <option value="人力资源管理师">人力资源管理师</option>
+                        <option value="建造师">建造师</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </div>
+                <textarea placeholder="留言内容（选填）" rows="4"></textarea>
+                <button type="submit" class="btn btn-primary btn-submit">提交咨询</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 职业提升平台 | 助力您的职业发展</p>
+            <p>咨询热线：400-XXX-XXXX | 工作时间：周一至周日 9:00-21:00</p>
+        </div>
+    </footer>
+
+    <!-- 在线客服悬浮按钮 -->
+    <div class="floating-contact">
+        <button class="float-btn" id="contactBtn" title="在线咨询">
+            <span class="float-icon">💬</span>
+        </button>
+    </div>
+
+    <!-- 咨询弹窗 -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <h3>选择咨询方式</h3>
+            <div class="contact-methods">
+                <a href="weixin://" class="contact-method-btn wechat-btn">
+                    <span class="method-icon">📱</span>
+                    <span class="method-name">微信咨询</span>
+                    <span class="method-id">微信号：your_wechat_id</span>
+                </a>
+                <a href="tencent://message/?uin=你的QQ号&Site=&Menu=yes" class="contact-method-btn qq-btn">
+                    <span class="method-icon">💬</span>
+                    <span class="method-name">QQ咨询</span>
+                    <span class="method-id">QQ号：123456789</span>
+                </a>
+                <a href="tel:400-XXX-XXXX" class="contact-method-btn phone-btn">
+                    <span class="method-icon">📞</span>
+                    <span class="method-name">电话咨询</span>
+                    <span class="method-id">400-XXX-XXXX</span>
+                </a>
+            </div>
+            <div class="contact-tips">
+                <p>💡 提示：点击按钮可直接跳转到对应应用</p>
+                <p>⏰ 工作时间：周一至周日 9:00-21:00</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
