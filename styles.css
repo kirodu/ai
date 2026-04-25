@@ -1,0 +1,1352 @@
+/* ========== 墨刀风格 - 全新设计 ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    line-height: 1.8;
+    color: #2c3e50;
+    background: #ffffff;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ========== 导航栏 - 墨刀风格 ========== */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: -0.5px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #5a6c7d;
+    font-weight: 400;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-menu a:hover {
+    color: #2c3e50;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #2c3e50;
+}
+
+/* ========== 英雄区 - 墨刀风格 ========== */
+.hero {
+    background: #ffffff;
+    padding: 140px 0 120px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.promo-badge {
+    display: inline-block;
+    background: #f7f9fc;
+    color: #5a6c7d;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    border: 1px solid #e8ecf1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -2px;
+    color: #1a1a1a;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    color: #5a6c7d;
+    font-weight: 400;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.btn {
+    padding: 16px 36px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #1a252f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(44, 62, 80, 0.2);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #2c3e50;
+    border: 1px solid #e8ecf1;
+}
+
+.btn-secondary:hover {
+    background: #f7f9fc;
+    border-color: #2c3e50;
+}
+
+/* 统计数据 - 墨刀风格 */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #5a6c7d;
+    font-weight: 400;
+}
+
+/* ========== 通用区块 ========== */
+section {
+    padding: 120px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #5a6c7d;
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+    font-weight: 400;
+}
+
+/* ========== 服务项目 - 墨刀风格 ========== */
+.services {
+    background: #fafbfc;
+    overflow: hidden;
+}
+
+.services-scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    margin: 0 -40px;
+    padding: 0 40px;
+}
+
+.services-scroll-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.services-scroll-container::-webkit-scrollbar-track {
+    background: #e8ecf1;
+    border-radius: 3px;
+}
+
+.services-scroll-container::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+    border-radius: 3px;
+}
+
+.services-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #1a252f;
+}
+
+.services-scroll {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.service-card-horizontal {
+    flex: 0 0 320px;
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    border: 1px solid #e8ecf1;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.service-card-horizontal:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    border-color: #2c3e50;
+}
+
+.service-icon-large {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.service-card-horizontal h3 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.service-card-horizontal p {
+    color: #5a6c7d;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.service-tag {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: #2c3e50;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* ========== 优势展示 - 墨刀风格 ========== */
+.advantages {
+    background: white;
+}
+
+.advantages-grid-four {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.advantage-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    border: 1px solid #e8ecf1;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.advantage-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    border-color: #2c3e50;
+}
+
+.advantage-icon-box {
+    width: 64px;
+    height: 64px;
+    background: #f7f9fc;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.advantage-icon {
+    font-size: 2rem;
+}
+
+.advantage-card h3 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.advantage-card p {
+    color: #5a6c7d;
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.advantage-badge {
+    display: inline-block;
+    background: #f7f9fc;
+    color: #2c3e50;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #e8ecf1;
+}
+
+/* ========== 热门证书 - 墨刀风格 ========== */
+.certificates {
+    background: #fafbfc;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.cert-card-link {
+    text-decoration: none;
+    display: block;
+}
+
+.cert-card-new {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    border: 1px solid #e8ecf1;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+}
+
+.cert-card-new:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    border-color: #2c3e50;
+}
+
+.cert-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.cert-card-new h3 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cert-card-new .cert-desc {
+    color: #5a6c7d;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.cert-info-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid #e8ecf1;
+    border-bottom: 1px solid #e8ecf1;
+}
+
+.cert-info-row span {
+    font-size: 0.85rem;
+    color: #5a6c7d;
+}
+
+.cert-stats {
+    text-align: center;
+    margin-top: 1rem;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.cert-arrow {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.cert-card-new:hover .cert-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ========== 学习流程 - 墨刀风格 ========== */
+.process {
+    background: white;
+}
+
+.timeline-horizontal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.timeline-item-h {
+    flex: 1;
+    text-align: center;
+}
+
+.timeline-number {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    margin: 0 auto 1.5rem;
+    background: #f7f9fc;
+    color: #2c3e50;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: 2px solid #e8ecf1;
+    transition: all 0.3s ease;
+}
+
+.timeline-item-h:hover .timeline-number {
+    background: #2c3e50;
+    color: white;
+    border-color: #2c3e50;
+    transform: scale(1.1);
+}
+
+.timeline-content h3 {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: #5a6c7d;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.timeline-arrow {
+    font-size: 1.5rem;
+    color: #e8ecf1;
+    margin-top: 28px;
+}
+
+/* ========== 学员评价 - 墨刀风格 ========== */
+.testimonials {
+    background: #fafbfc;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid #e8ecf1;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transform: translateY(-4px);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin-right: 1rem;
+    background: #f7f9fc;
+    color: #2c3e50;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.testimonial-info {
+    text-align: left;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.2rem;
+}
+
+.testimonial-role {
+    color: #5a6c7d;
+    font-size: 0.85rem;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #5a6c7d;
+    line-height: 1.8;
+}
+
+.testimonial-rating {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.testimonial-time {
+    color: #9ca8b4;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* ========== FAQ - 墨刀风格 ========== */
+.faq {
+    background: white;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e8ecf1;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: #2c3e50;
+}
+
+.faq-question {
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: #fafbfc;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    color: #5a6c7d;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 2rem;
+    color: #5a6c7d;
+    line-height: 1.8;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    padding: 0 2rem 1.5rem;
+}
+
+/* ========== 联系表单 - 墨刀风格 ========== */
+.contact {
+    background: #fafbfc;
+}
+
+.contact-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: #5a6c7d;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 1px solid #e8ecf1;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s;
+    background: white;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2c3e50;
+    box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* ========== 页脚 - 墨刀风格 ========== */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ========== 悬浮按钮 - 墨刀风格 ========== */
+.floating-contact {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+}
+
+.float-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #2c3e50;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(44, 62, 80, 0.3);
+    transition: all 0.3s;
+}
+
+.float-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(44, 62, 80, 0.4);
+}
+
+.float-icon {
+    font-size: 1.6rem;
+}
+
+/* ========== 弹窗 - 墨刀风格 ========== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #5a6c7d;
+    transition: color 0.3s;
+}
+
+.modal-close:hover {
+    color: #2c3e50;
+}
+
+.modal-content h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-method-btn {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid #e8ecf1;
+    background: white;
+}
+
+.contact-method-btn:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-color: #2c3e50;
+}
+
+.wechat-btn {
+    color: #07c160;
+}
+
+.qq-btn {
+    color: #12b7f5;
+}
+
+.phone-btn {
+    color: #ff6b6b;
+}
+
+.method-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.method-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right: auto;
+    color: #1a1a1a;
+}
+
+.method-id {
+    font-size: 0.9rem;
+    color: #5a6c7d;
+}
+
+.contact-tips {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e8ecf1;
+}
+
+.contact-tips p {
+    margin: 0.5rem 0;
+    color: #5a6c7d;
+    font-size: 0.9rem;
+}
+
+/* ========== 响应式 ========== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .navbar .container {
+        padding: 15px 20px;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        gap: 0;
+        transition: left 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .nav-menu.mobile-active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #e8ecf1;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+    
+    .hero {
+        padding: 80px 0 60px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    /* 移动端统计数据 */
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    /* 移动端服务项目 */
+    .services-scroll-container {
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+    
+    .services-scroll {
+        gap: 1rem;
+    }
+    
+    .service-card-horizontal {
+        flex: 0 0 260px;
+    }
+    
+    section {
+        padding: 80px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .advantages-grid-four {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .timeline-horizontal {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .timeline-arrow {
+        transform: rotate(90deg);
+        margin: 0;
+    }
+    
+    .floating-contact {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* ========== 移动端全面优化 ========== */
+
+/* 平板设备 (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .advantages-grid-four {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .certificates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 小屏手机 (最大 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .navbar .container {
+        padding: 12px 15px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .hero {
+        padding: 60px 0 50px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+        letter-spacing: -1px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .promo-badge {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+    
+    .btn {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+    }
+    
+    .hero-cta {
+        gap: 0.8rem;
+    }
+    
+    /* 统计数据 */
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .stat-item {
+        min-width: auto;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    /* 区块间距 */
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    /* 服务卡片 */
+    .service-card-horizontal {
+        flex: 0 0 240px;
+        padding: 2rem 1.5rem;
+    }
+    
+    .service-icon-large {
+        font-size: 2.5rem;
+    }
+    
+    .service-card-horizontal h3 {
+        font-size: 1.2rem;
+    }
+    
+    .service-card-horizontal p {
+        font-size: 0.9rem;
+    }
+    
+    @keyframes scrollServices {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-240px * 6 - 1rem * 6));
+        }
+    }
+    
+    /* 优势卡片 */
+    .advantage-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .advantage-icon-box {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .advantage-icon {
+        font-size: 1.8rem;
+    }
+    
+    .advantage-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .advantage-card p {
+        font-size: 0.95rem;
+    }
+    
+    /* 证书卡片 */
+    .cert-card-new {
+        padding: 2rem 1.5rem;
+    }
+    
+    .cert-icon {
+        font-size: 2rem;
+    }
+    
+    .cert-card-new h3 {
+        font-size: 1.2rem;
+    }
+    
+    .cert-card-new .cert-desc {
+        font-size: 0.9rem;
+    }
+    
+    .cert-info-row {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+    
+    .cert-info-row span {
+        font-size: 0.8rem;
+    }
+    
+    /* 学习流程 */
+    .timeline-number {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 1.1rem;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+    
+    .timeline-content p {
+        font-size: 0.85rem;
+    }
+    
+    /* 学员评价 */
+    .testimonial-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .testimonial-avatar {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1rem;
+    }
+    
+    .testimonial-text {
+        font-size: 0.95rem;
+    }
+    
+    /* FAQ */
+    .faq-question {
+        padding: 1.2rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .faq-answer {
+        padding: 0 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .faq-item.active .faq-answer {
+        padding: 0 1.5rem 1.2rem;
+    }
+    
+    /* 联系表单 */
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        padding: 14px 16px;
+        font-size: 0.95rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    /* 悬浮按钮 */
+    .floating-contact {
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .float-btn {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .float-icon {
+        font-size: 1.4rem;
+    }
+    
+    /* 弹窗 */
+    .modal-content {
+        padding: 2rem 1.5rem;
+        width: 95%;
+    }
+    
+    .modal-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-method-btn {
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .method-icon {
+        font-size: 1.5rem;
+    }
+    
+    .method-name {
+        font-size: 1rem;
+    }
+    
+    .method-id {
+        font-size: 0.85rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    
+    /* 页脚 */
+    .footer {
+        padding: 2rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* 横屏模式优化 */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 60px 0 40px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .stats {
+        padding-top: 2rem;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .modal-content {
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+}
+
+/* 触摸优化 */
+@media (hover: none) and (pointer: coarse) {
+    /* 增大可点击区域 */
+    .btn,
+    .contact-method-btn,
+    .faq-question,
+    .nav-menu a {
+        min-height: 44px;
+    }
+    
+    /* 移除悬停效果 */
+    .service-card-horizontal:hover,
+    .advantage-card:hover,
+    .cert-card-new:hover {
+        transform: none;
+    }
+    
+    /* 点击时的反馈 */
+    .btn:active,
+    .contact-method-btn:active {
+        transform: scale(0.98);
+    }
+}
+
+/* 高分辨率屏幕优化 */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* 暗黑模式支持（可选） */
+@media (prefers-color-scheme: dark) {
+    /* 如果需要暗黑模式，可以在这里添加样式 */
+}
+
+/* 减少动画（无障碍） */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .stats-track,
+    .services-scroll {
+        animation: none !important;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .navbar,
+    .floating-contact,
+    .modal {
+        display: none !important;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+}
